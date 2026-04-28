@@ -15,34 +15,190 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/gallery.css ">
+
+
+    <!-- AWESOME FONT CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
 
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                Cynthia's Bistro
+            </div>
+            
+            <ul class="desktop-navbar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./about.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="mobile">
+
+                <button>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <ul class="mobile-navbar">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
     <main>
-        <section class="hero container">
+        <section class="hero">
+
             <div class="overlay">
                 <h1>OUR SPACE</h1>
                 <p>Experience Comfort and Elegance</p>
             </div>
-        </section>
 
-        <section class="gallery">
-            
-            <div class="gallery-heading">
-                <ul>
+            <div class="gallery-categories">
+
+                <ul class="desktop-anchor">
                     <li><a href="#food-dishes"> Food </a></li>
                     <li><a href="#interior">Interior</a></li>
-                    <li><a href="#exterior">Exterior</a></li>
-                    <li><a href="#event">Event</a></li>
+                    <li><a href="#dinning">Dinning</a></li>
                     <li><a href="#chef">Chef at Workk</a></li>
                 </ul>
+
+                <div class="mobile">
+                    <button><i class="fa-solid fa-bars"></i></button>
+                    <ul class="mobile-anchor">
+                        <li><a href="#food-dishes"> Food </a></li>
+                        <li><a href="#interior">Interior</a></li>
+                        <li><a href="#dinning">Dinning</a></li>
+                        <li><a href="#chef">Chef at Workk</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery top-margin">
+
+            <div class="gallery-body">
+
+                <div class="food-dishes"  id="food-dishes">
+
+                    <h3>Food Dishes</h3>
+                    <div class="food-dishes-images">
+
+                        <article>
+                            <img src="./images/gallery/food-dishes/food1.jpg" alt="italian food 1">
+                        </article>
+
+                        <article>
+                            <img src="./images/gallery/food-dishes/food2.jpg" alt="italian food 1">
+                        </article>
+
+                        <article>
+                            <img src="./images/gallery/food-dishes/food3.jpg" alt="italian food 1">
+                        </article>
+
+                        <article>
+                            <img src="./images/gallery/food-dishes/food4.jpg" alt="italian food 1">
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="interior" id="interior">
+
+                    <h3>Interior</h3>
+                    <div class="interior-images">
+
+                        <article>
+                            <img src="./images/gallery/interior/service-area.jpg" alt="Service area image">
+                        </article>
+
+                        <article>
+                            <img src="./images/gallery/interior/bar-area.jpg" alt="Bar Area image ">
+                        </article>
+
+                        <article>
+                            <img src="./images/gallery/interior/restroom.jpg" alt="Restroom  image ">
+                        </article>
+
+                        <article>
+                            <img src="./images/gallery/interior/Entrance-waitin-area.jpg" alt="Reception">
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="dinning" id="dinning">
+
+                    <h3>Dinning Atmosphere</h3>
+                    <div class="dinning-images">
+
+                        <article>
+                            <img src="./images/gallery/dinning/dinning1.jpg" alt="dinning image 1">
+                        </article>
+
+                        <article>
+                            <img src="./images/gallery/dinning/dinning2.jpg" alt="dinning image 2">
+                        </article>
+
+                        <article>
+                            <img src="./images/gallery/dinning/dinning3.jpg" alt="interior image 3">
+                        </article>
+
+                        <article>
+                            <img src="./images/gallery/dinning/dinning4.jpg" alt="interior image 4">
+                        </article>
+
+                    </div>
+                </div>
+                <div class="chef" id="chef">
+
+                    <h3>Chef at Work</h3>
+                    <div class="chef-images">
+
+                        <article>
+                            <img src="./images/gallery/chef/chef1.jpg" alt="chef image 1">
+                        </article>
+
+                        <article>
+                            <img src="./images/gallery/chef/chef2.jpg" alt="chef image 2">
+                        </article>
+
+                        <article>
+                            <img src="./images/gallery/chef/chef3.jpg" alt="chef image 3">
+                        </article>
+
+                        <article>
+                            <img src="./images/gallery/chef/chef4.jpg" alt="chef image 4">
+                        </article>
+
+                    </div>
+                </div>
             </div>
 
         </section>
         
     </main>
+
+    <footer>
+        <p>&copy; 2026 Cynthia's Bistro. All rights reserved</p>
+    </footer>
     
 </body>
 </html>
