@@ -11,8 +11,209 @@ h1,h2,h3,h4,h5{
 
 p,a{
     font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
 }
 
 a{
     text-decoration: none;
+}
+
+.hero {
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-image: url(../images/menu/foodiesfeed.com_fresh-vegetables-in-midair.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.3);
+}
+
+.hero h1 {
+    color: #f6f6f6;
+    z-index: 5;
+    font-size: 1.5rem;
+}
+
+.appetizer-sec> h2{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.appetizer-grid {
+    display: grid;
+    grid-template-columns:1fr;
+    margin: 0.5rem;
+    gap: 1rem;
+}
+
+.appetizer> img {
+    width:100%;
+    height:300px;
+    background-image:contain ;
+    object-fit: cover;
+}
+
+.appetizer> h3,p {
+    text-align: center;
+}
+
+.maincourse-sec> h2 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.maincourse-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0.5rem;
+    gap: 1rem;
+}
+
+.main-course> img {
+    width:100%;
+    height:300px;
+    background-image:contain ;
+    object-fit: cover;
+}
+
+.main-course> h3,p {
+    text-align: center;
+}
+
+.dessert-sec> h2 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.dessert-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0.5rem;
+    gap: 1rem;
+}
+
+.dessert> img {
+    width:100%;
+    height:300px;
+    background-image:contain ;
+    object-fit: cover;
+}
+
+.dessert> h3,p {
+    text-align: center;
+}
+
+.drink-sec> h2 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.drink-grid {
+    display: grid;
+    grid-template-columns:1fr;
+    margin: 0.5rem;
+    gap: 1rem;
+}
+
+.drink> img {
+    width:100%;
+    height:300px;
+    background-image:contain ;
+    object-fit: cover;
+}
+
+.drink> h3,p {
+    text-align: center;
+}
+
+.special-note {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.special-note> p {
+    font-size: 1.5rem;
+}
+/* screens 768px and above */
+@media (min-width:768px) {
+    .hero h1 {
+    color: #f6f6f6;
+    z-index: 5;
+    font-size: 2.5rem;
+}
+    .appetizer-sec {
+    font-size: 1.5rem;
+}
+    .appetizer> p {
+    font-size: 1.5rem;
+}
+    .maincourse-sec {
+    font-size: 1.5rem;
+}
+    .main-course> p {
+    font-size: 1.5rem;
+}
+    .dessert-sec {
+    font-size: 1.5rem;
+}
+    .dessert> p {
+    font-size: 1.5rem;
+}
+    .drink-sec {
+    font-size: 1.5rem;
+}
+    .drink> p {
+    font-size: 1.5rem;
+}
+    .special-note> p{
+    font-size:2rem;
+}
+}
+/* screen 1024px and above  */
+@media (min-width:1024px) {
+    .hero h1 {
+    color: #f6f6f6;
+    z-index: 5;
+    font-size: 3rem;
+}    
+    .appetizer-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+    .maincourse-grid {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    margin: 0.5rem;
+    gap: 1rem;
+}
+
+    .dessert-grid {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    margin: 0.5rem;
+    gap: 1rem;
+}
+
+    .drink-grid {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    margin: 0.5rem;
+    gap: 1rem;
+}
 }
