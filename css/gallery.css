@@ -16,3 +16,286 @@ p,a{
 a{
     text-decoration: none;
 }
+
+ul li{
+    list-style-type: none;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-margin{
+    margin-top: 2rem;
+}
+
+
+
+
+
+/* HERO SECTION */
+
+main{
+    background-color: #fff8ec;
+}
+
+.hero{
+    height: calc(100vh - 4.5rem);
+    background-image: url(../images/gallery/hotel-exterior-night.jpg);
+
+    background-size: cover;
+    position: relative;
+
+}
+
+.overlay{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.overlay h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.gallery-categories{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3rem;
+    height: 90%;
+    width: 100%;
+    margin: auto 0;
+    border-radius: 15px;
+}
+
+
+/* hidden desktop gallery categories navigation */
+
+.desktop-anchor{
+    display: none;
+}
+
+.gallery-categories .mobile{
+    width:fit-content; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    position: relative;
+}
+}
+
+.gallery-categories .mobile button{
+    display: flex;
+    font-size: 3rem;
+    border: 2px solid red;
+}
+
+.hero .mobile .mobile-anchor{
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    background-color:#faebd7 ;
+
+}
+
+.hero .mobile:hover{
+    height: 100%;
+    width: 100%;
+}
+
+
+.hero .mobile:hover .mobile-anchor{
+    display: flex;
+}
+
+.gallery-categories a{
+    color: whitesmoke;
+    font-size: 1.6rem;
+    background-color: #b4843c;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+
+.gallery-categories a:hover{
+    background-color: #deb887;
+}
+
+
+/* GALLERY SECTION */
+
+.gallery{
+    width: 100%;
+}
+
+.gallery-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.food-dishes,
+.interior,
+.dinning,
+.chef{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.food-dishes-images,
+.interior-images,
+.dinning-images,
+.chef-images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,auto);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.food-dishes-images article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 50%;
+    overflow: hidden; 
+    aspect-ratio: 1 / 1;
+}
+
+.food-dishes-images articles img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+
+
+
+.interior-images article,
+.chef-images article,
+.dinning-images article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.2rem; 
+    overflow: hidden;
+    background-color: #faebd7;
+    border-radius: 15px;
+}
+
+
+
+.interior-images article img,
+.dinning-images article img,
+.dinning-images article img,
+.chef-images article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-body article:hover img{
+    transform: scale(1.05);
+}
+
+
+@media(min-width:768px){
+
+    /* GALLERY SECTION */
+
+    .food-dishes-images,
+    .interior-images,
+    .dinning-images,
+    .chef-images{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+    }
+}
+
+
+
+@media(min-width:1024px){
+    /* .hero{
+        height: 60vh;
+    } */
+
+
+    /* GALLERY SECTION */
+
+    .hero .gallery-categories .mobile{
+        display: none;
+    }
+
+    .hero .gallery-categories{
+        width: fit-content;
+    }
+
+    .desktop-anchor{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 15px;
+        background-color:#faebd7 ;
+    }
+
+    .food-dishes-images,
+    .interior-images,
+    .dinning-images,
+    .chef-images{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+    }
+
+    .gallery h3{
+        font-size: 2rem;
+    }
+    
+}
