@@ -1,0 +1,19 @@
+#logo span:first-child{
+    font-size: 30px;
+    color: rgb(213, 133, 29);
+}
+
+#logo span:last-child{
+    font-family: "Sacramento", cursive; 
+    font-weight: 900;
+    font-size:30px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
