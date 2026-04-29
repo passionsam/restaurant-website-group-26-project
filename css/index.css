@@ -127,6 +127,26 @@ header{
 
 */
 
+#logo span:first-child{
+    font-size: 30px;
+    color: rgb(213, 133, 29);
+}
+
+#logo span:last-child{
+    font-family: "Sacramento", cursive; 
+    font-weight: 900;
+    font-size:30px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
 
 .hero{
     background: linear-gradient(rgba(0,0,0,0.5)),url(../images/gallery/food-dishes/restaurant2.jpg);
@@ -376,13 +396,7 @@ footer{
     transition: 0.3s ease;
    }
 
-    
 
-    .dish {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    
 
     */
 
@@ -400,6 +414,10 @@ footer{
         right: -6px;
         bottom: 1px;
         margin: 0 0.6rem;
+    }
+
+    .dish {
+        grid-template-columns: repeat(3, 1fr);
     }
 
 
