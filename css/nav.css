@@ -21,8 +21,8 @@ header{
     position: sticky;
     z-index: 50;
     height: 4.5rem;
-    background-color: #b4840680;
-    color: #fff8ec;
+    background-color: #fff8ec;
+    color: black;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
@@ -44,13 +44,13 @@ header nav .logo{
 
 header nav a{
     font-size: 1.5rem;
-    color: #fff8ec;
+    color: black;
     font-weight: 500;
     
 }
 
 header nav a:hover{
-    background-color: #5C4F4A;
+    background-color: #deb887;
     padding: 0.4rem;
     border-radius: 15px;
 }
@@ -78,7 +78,7 @@ nav .mobile-navbar{
     position: absolute;
     top: 100%;
     right:0;
-    background-color: #b4840680;
+    background-color: #fff8ec;
     height: calc(100vh - 4.5rem);
     display: none;
     flex-direction: column;
