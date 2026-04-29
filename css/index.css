@@ -34,7 +34,7 @@ button{
     background: #fff8ec;
     font-size: 1.5rem;
 }
-
+/*
 header{
         position: sticky;
         background-color: #fff8ec;
@@ -86,6 +86,7 @@ header{
     justify-content: center;
     height: 100%;
     top: 100%;
+    border: 2px solid red;
 }
 
 
@@ -93,8 +94,9 @@ header{
     position: absolute;
     top: 100%;
     right:0;
-    background-color: rgba(180, 132, 60, 0.9);
+    background-color: #fff8ec;
     z-index: 100;
+    color: black;
     height: calc(100vh - 4.5rem);
     display: none;
     flex-direction: column;
@@ -103,6 +105,11 @@ header{
     max-width: 16rem;
     justify-content: space-evenly;
     border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.mobile-navbar a{
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .mobile-navbar:hover a{
@@ -117,6 +124,9 @@ header{
 .mobile:hover .mobile-navbar{
     display: flex;
 }
+
+*/
+
 
 .hero{
     background: linear-gradient(rgba(0,0,0,0.5)),url(../images/gallery/food-dishes/restaurant2.jpg);
@@ -331,6 +341,16 @@ footer{
         display: none;
     }
 
+    /*
+
+    nav {
+        padding: 1rem 3rem;
+    }
+
+    .desktop-navbar {
+        font-size: 20px;
+    }
+
 
      .desktop-navbar{
         display: flex;
@@ -362,13 +382,9 @@ footer{
         grid-template-columns: repeat(3, 1fr);
     }
 
-    nav {
-        padding: 1rem 3rem;
-    }
+    
 
-    .desktop-navbar {
-        font-size: 20px;
-    }
+    */
 
     .hero > p{
     font-size: 20px;
