@@ -14,9 +14,158 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
 <body>
     
+     <main class="parent">
+
+             <!--Page Hero-->
+        <section class="hero-page">
+            <div class="hero-inner">
+                <h1>Visit Us</h1>
+                <p>Visit us today and you will have a quality food without breaking the bank</p>
+                
+                
+            </div>
+        </section>
+
+        <!--Contact Section-->
+        <section class="contact-section">
+            <div class="contact-container">
+
+                <!--left: Contact Information-->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+
+                    <div class="info-block">
+                        <i></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>83 Park Avenue GRA<br>Enugu,Enugu State<br>Nigeria</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                         <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="tel:0806331115">0806331115</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <i class="fa-duotone fa-solid fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:reservations@cynthibistro.com">reservation@cynthiabistro.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <i></i>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <ul class="hours-list">
+                                <li><span>Monday - Thursday</span>9:00AM - 10:00 PM</li>
+                                <li><span>Friday - Satursday</span>10:00AM - 11:30 PM</li>
+                                <li><span>Sunday</span>11:30AM - 9:00 PM</li>
+                                <li><span>Public Holydays</span>10:00AM - 10:00 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="social-wrap">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+
+                            <a href="#" aria-label="X"><i class="fa-brands fa-twitter"></i></a>
+
+                            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--Right: Contact Form-->
+                <div class="form-wrap">
+                    <h2>Book a Table</h2>
+                    <form class="contact-form" onsubmit="return false;">
+
+                        <div class="form-row">
+                          <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="izu@example.com" required>
+
+                          </div>
+                        <div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="0806331115">
+                            </div>
+                            <div class="form-group">
+                                <label for="quests">Nummber of Guests</label>
+                                <select name="guests" id="guests">
+                                  <option value="1">1 Person</option>
+                                  <option value="2">2 People</option>
+                                  <option value="3">3 People</option>
+                                  <option value="4" selected>4 People</option>
+                                  <option value="5">5 People</option>
+                                  <option value="6">6+ People</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="requests">Special Requests</label>
+                            <textarea id="requests" name="requests" rows="4" placeholder=""></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Submit Reservation</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--Google Maps Embed-->
+        <section>
+            <div class="map-section">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.464907094642!2d7.4984873!3d6.462633599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a3bec5c99921%3A0x3ed5715e3dbeb012!2s83%20Park%20Ave%2C%20GRA%2C%20Enugu%20402142%2C%20Enugu!5e0!3m2!1sen!2sng!4v1777412185632!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         
+            
+
+        </section>
+          
+    </main>
+
+
 </body>
-</html>
+</html> 
