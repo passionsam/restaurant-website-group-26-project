@@ -45,6 +45,7 @@ ul li{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 
 }
 
@@ -54,17 +55,43 @@ ul li{
     color: white;
 }
 
+.overlay{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
 /* HISTORY AND MISSION SECTION AND CHEF*/
 
-.history-mission,
-.chef{
+.history-mission{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
     gap: 1rem;
     background-color: #faebd7;
     padding: 0.5rem;
+    border-radius: 15px;
 }
+
+.chef{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    
+    padding: 0.5rem;
+}
+
 
 .history, 
 .mission,
@@ -106,7 +133,6 @@ ul li{
 /* GALLERY SECTION */
 
 .gallery{
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
@@ -146,9 +172,16 @@ ul li{
 @media(min-width:768px){
 
     .history-mission,
-    .chef{
+    .chef,
+    .gallery .interior,
+    .gallery .exterior{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2, auto);
+    }
+
+
+    .chef{
+        gap: 2rem;
     }
 }
 
