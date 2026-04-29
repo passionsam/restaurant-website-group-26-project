@@ -186,10 +186,4 @@ ul li{
 }
 
 
-@media(min-width:1024px){
-    .gallery .interior,
-    .gallery .exterior{
-        grid-template-columns:repeat(3,1fr);
-        grid-template-rows: auto;
-    }
-}
+
