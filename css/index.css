@@ -1,9 +1,25 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
+body{
+    overflow-x: hidden;
+    background-color: #fff8ec;
+}
+
+a{
+    text-decoration: none; 
+    color: black;  
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
 
 h1,h2,h3,h4,h5{
     font-family: "Playfair Display", serif;
@@ -13,11 +29,364 @@ p,a{
     font-family: "Open Sans", sans-serif;
 }
 
-a{
-    text-decoration: none;
+button{
+    border: none;
+    background: #fff8ec;
+    font-size: 1.5rem;
+}
+
+header{
+        position: sticky;
+        background-color: #fff8ec;
+        width: 100%;
+        min-height: 4.5rem;
+        z-index: 100;
+      }
+
+
+.desktop-navbar{
+    display: none;
+}
+
+  nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 
-ul li{
-    list-style-type: none;
+#logo span:first-child{
+    font-size: 30px;
+    color: rgb(213, 133, 29);
 }
+
+#logo span:last-child{
+    font-family: "Sacramento", cursive; 
+    font-weight: 900;
+    font-size:30px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+ .mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    top: 100%;
+}
+
+
+ .mobile-navbar{
+    position: absolute;
+    top: 100%;
+    right:0;
+    background-color: rgba(180, 132, 60, 0.9);
+    z-index: 100;
+    height: calc(100vh - 4.5rem);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    max-width: 16rem;
+    justify-content: space-evenly;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.mobile-navbar:hover a{
+    display: inline-block;
+    padding: 0.5 1rem;
+    background-color: whitesmoke;
+    transform: rotateX(2px);
+    transition: 0.3s ease;
+
+}
+
+.mobile:hover .mobile-navbar{
+    display: flex;
+}
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.5)),url(../images/gallery/food-dishes/restaurant2.jpg);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero > p{
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem;
+    gap: 0.5rem;
+}
+
+
+.hero-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    align-self: flex-start;
+    justify-self: flex-end;
+    position: absolute;
+    margin: 0 0.2rem;
+    bottom: 5px;
+    animation: rotate360 12s ease infinite;
+}
+
+
+@keyframes rotate360  {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.btn{
+    background-color: #b4843c;
+    padding: 0.7rem 1.3rem;
+    margin-top: 1rem;
+    display:inline-block;
+    align-self: center;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    
+
+}
+
+.btn:hover{
+    transform: translateX(4px);
+    transition: 0.3s ease-in;
+}
+
+.btn:active{
+    transform: translateY(4px);
+    background: #fff8ec;
+}
+
+
+
+ .dish{
+    background-color: #faebd7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 1.4rem;
+    padding: 20px;
+ }
+
+ .dish > div{
+    padding: 1rem;
+    background-color: #fff8ec;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    
+ }
+
+ .dish > div{
+        transition: 0.3s ease;
+    }
+    
+    .dish > div:hover{
+        transform: translateY(-8px);
+    }
+
+ .dish > div h3{
+    padding-top: 1rem;
+ }
+ .dish img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+ }
+
+ .cta{
+    margin: 0.5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+ }
+
+ .cta a{
+    background-color: #b4843c;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+ }
+
+ .cta:hover a{
+    transform: translateX(4px);
+    transition: 0.3s ease-in;
+}
+
+.cta:active a{
+    transform: translateY(4px);
+    background: #fff8ec;
+}
+
+ .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: #fff8ec;
+
+ }
+
+ 
+footer{
+    background-color: #b4840680;
+    padding: 2rem;
+    
+}
+
+.top{
+    padding: 0.5rem;
+    background-color: #fff8ec;
+    border-radius: 100%;
+    display: inline-block;
+    flex-direction: column;
+    margin: 0.5rem;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+
+
+}
+
+
+@media (min-width: 768px) {
+
+     nav {
+        padding: 1rem 3rem;
+    }
+
+
+    .dish {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .hero > p{
+        font-size: 20px;
+    }
+
+    .hero-content > p{
+        font-size: 18px;
+        
+
+    }
+    .hero-content {
+        margin: 0 1rem;
+        
+    }
+
+    .hero-img img{
+        height: 150px;
+        width: 150px;
+        bottom: 1px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    nav .mobile{
+        display: none;
+    }
+
+
+     .desktop-navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+
+   .desktop-navbar a:hover{
+    background-color: #deb887;
+    border-radius: 10px;
+    padding: 0.4rem 0.9rem;
+    transition: 0.3s ease-in-out;
+   }
+
+   .desktop-navbar a:active{
+    display: inline-block;
+    transform: scale(1.1);
+    cursor: progress;
+    transition: 0.3s ease;
+   }
+
+    
+
+    .dish {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav {
+        padding: 1rem 3rem;
+    }
+
+    .desktop-navbar {
+        font-size: 20px;
+    }
+
+    .hero > p{
+    font-size: 20px;
+}
+
+.hero-content > p{
+    font-size: 15px;
+}
+
+.hero-img img{
+        height: 200px;
+        width: 200px;
+        right: -6px;
+        bottom: 1px;
+        margin: 0 0.6rem;
+    }
+
+
+}
+
+
