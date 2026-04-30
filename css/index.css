@@ -34,98 +34,7 @@ button{
     background: #fff8ec;
     font-size: 1.5rem;
 }
-/*
-header{
-        position: sticky;
-        background-color: #fff8ec;
-        width: 100%;
-        min-height: 4.5rem;
-        z-index: 100;
-      }
 
-
-.desktop-navbar{
-    display: none;
-}
-
-  nav{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-
-#logo span:first-child{
-    font-size: 30px;
-    color: rgb(213, 133, 29);
-}
-
-#logo span:last-child{
-    font-family: "Sacramento", cursive; 
-    font-weight: 900;
-    font-size:30px;
-}
-
-#logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-
- .mobile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    top: 100%;
-    border: 2px solid red;
-}
-
-
- .mobile-navbar{
-    position: absolute;
-    top: 100%;
-    right:0;
-    background-color: #fff8ec;
-    z-index: 100;
-    color: black;
-    height: calc(100vh - 4.5rem);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    max-width: 16rem;
-    justify-content: space-evenly;
-    border-left: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-.mobile-navbar a{
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.mobile-navbar:hover a{
-    display: inline-block;
-    padding: 0.5 1rem;
-    background-color: whitesmoke;
-    transform: rotateX(2px);
-    transition: 0.3s ease;
-
-}
-
-.mobile:hover .mobile-navbar{
-    display: flex;
-}
-
-*/
 
 #logo span:first-child{
     font-size: 30px;
@@ -149,7 +58,7 @@ header{
 
 
 .hero{
-    background: linear-gradient(rgba(0,0,0,0.5)),url(../images/gallery/food-dishes/restaurant2.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5)),url(../images/index/restaurant2.jpg);
     width: 100%;
     height: 80vh;
     display: flex;
