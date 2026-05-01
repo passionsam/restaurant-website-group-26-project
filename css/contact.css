@@ -4,6 +4,49 @@
     box-sizing: border-box;
 }
 
+.container {
+    display: grid;
+    border: 1px solid blue;
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+    height: 200px; 
+    gap: 16px;
+    background-color: blue;
+    grid-template-columns: repeat(4, 1fr);
+    
+     
+
+}
+
+.container div {
+    display: grid;
+    border: 1px solid black;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: aquamarine;
+    background-color: brown;
+    
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
+    padding: 0 1rem;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 h1,h2,h3,h4,h5{
     font-family: "Playfair Display", serif;
@@ -22,7 +65,7 @@ a{
 
 .hero-page {
     position: relative;
-    background-image: url(../food-hero.jpg);
+    background-image: url(../images/contact/hero-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -30,22 +73,21 @@ a{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: cente;
     text-align: center;
     color: #fff;
     
-
-
 }
 
 /* 
 ============ PAGE HERO ================ */
 
 .hero-page {
-    background-color: #fff8ec;
+   background-color: #fff8ec;
     color: #ffffff;
     padding: 120px 5% 80px;
     text-align: center;
+    opacity: 1;
 }
 
 .page-hero::before {
@@ -56,7 +98,17 @@ a{
     z-index: 1;
 
 }
+
     
+.hero-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    opacity: 1;
+    
+}
 
 
 
@@ -66,17 +118,19 @@ a{
     margin-bottom: 16px;
     letter-spacing: -1,5px;
     padding: 8px;
+    opacity: 1;
 }
 
 .hero-inner p {
     font-size: 1,125rem;
-    color: wheat;
+    color: white;
     max-width: 600px;
     margin: 0 auto;
     padding: 16px;
     text-align: left;
-    background-color: grey;
+    /* background-color: grey; */
     border-radius: 16px;
+    opacity: 1;
     
 
 }
