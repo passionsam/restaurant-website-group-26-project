@@ -31,7 +31,9 @@ ul li{
     margin-top: 2rem;
 }
 
-
+main{
+    background-color: #fff8ec;
+}
 /* HERO SECTION */
 
 .hero{
