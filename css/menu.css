@@ -21,6 +21,11 @@ a{
 .top-margin {
     margin-top: 2rem;
 }
+
+main{
+    background-color: #fff8ec;
+}
+
 .hero {
     width: 100%;
     background-size: cover;
