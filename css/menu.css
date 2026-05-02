@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #fff8ec;
+}
 
 h1,h2,h3,h4,h5{
     font-family: "Playfair Display", serif;
@@ -22,9 +25,6 @@ a{
     margin-top: 2rem;
 }
 
-main{
-    background-color: #fff8ec;
-}
 
 .hero {
     width: 100%;
